@@ -1,13 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Estate</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <p class="header__top-banner-text">
+          ✨Discover Your Dream Property with Estatein
+          <a href="#" class="header_top-link">Learn More</a>
+        </p>
+        <button type="button"></button>
+      </div>
+      <div class="header__bottom">
+        <a href="" class="header__main-logo">
+          <img src="svg/logo.svg" width="93" height="28" alt="logo website">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">About Us</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Properties</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Services</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+">Contact Us</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="" alt="Photo of the object ned">
+      <div class="hero__info-block">
+        <span>✨Discover Your Dream Property with Estatein</span>
+      </div>
+      <h1 class="hero__title">Discover Your Dream Property with Estatein</h1>
+      <p class="hero__paragraph">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+      <a href="#">Learn More</a>
+      <a href="#propertis">Browse Properties</a>
+      <ul class="hero__list-total">
+        <li class="hero__item">
+          <h2 class="hero__title-total">200+</h2>
+          <p class="hero__paragraph-total">Happy Customers</p>
+        </li>
+        <li class="hero__item">
+          <h2 class="hero__title-total">10k+</h2>
+          <p class="hero__paragraph-total">Properties For Clients</p>
+        </li>
+        <li class="hero__item">
+          <h2 class="hero__title-total">16+</h2>
+          <p class="hero__paragraph-total">Years of Experience</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="advantages">
+      <ul class="advantages-list">
+        <li class="advantages__item">
+          <div class="advantages__icon-container">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.20432 6.54529C2.6102 7.95118 4.8896 7.95118 6.29549 6.54529C6.46825 6.37254 6.61978 6.18659 6.75008 5.99069C7.39505 6.96056 8.49783 7.59975 9.7499 7.59975C11.0021 7.59975 12.105 6.96039 12.75 5.9903C12.8804 6.18636 13.032 6.37245 13.2049 6.54534C14.6107 7.95122 16.8901 7.95122 18.296 6.54534C19.7019 5.13945 19.7019 2.86006 18.296 1.45417L17.9448 1.10297C17.4947 0.652881 16.8843 0.400024 16.2478 0.400024H3.25253C2.61601 0.400024 2.00556 0.65288 1.55548 1.10297L1.20432 1.45413C-0.201569 2.86001 -0.201569 5.13941 1.20432 6.54529Z" fill="#A685FA"/>
+              <path d="M1.3499 8.8387C3.06349 9.68884 5.13462 9.57276 6.75058 8.49048C7.60789 9.06411 8.63956 9.39975 9.7499 9.39975C10.8603 9.39975 11.8921 9.06405 12.7495 8.49032C14.3653 9.57268 16.4363 9.6889 18.1499 8.83901V17.8H18.4499C18.947 17.8 19.3499 18.203 19.3499 18.7C19.3499 19.1971 18.947 19.6 18.4499 19.6H13.0499C12.5528 19.6 12.1499 19.1971 12.1499 18.7V14.5C12.1499 14.003 11.747 13.6 11.2499 13.6H8.2499C7.75285 13.6 7.3499 14.003 7.3499 14.5V18.7C7.3499 19.1971 6.94696 19.6 6.4499 19.6H1.0499C0.552846 19.6 0.149902 19.1971 0.149902 18.7C0.149902 18.203 0.552846 17.8 1.0499 17.8H1.3499V8.8387Z" fill="#A685FA"/>
+            </svg>              
+          </div>
+          <p class="advantages__paragraph">Find Your Dream Home</p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__icon-container">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.25 4.5C10.0074 4.5 9 5.50736 9 6.75C9 7.99264 10.0074 9 11.25 9C12.4926 9 13.5 7.99264 13.5 6.75C13.5 5.50736 12.4926 4.5 11.25 4.5Z" fill="#A685FA"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 1.875C0.75 0.839466 1.58947 0 2.625 0H19.875C20.9105 0 21.75 0.839466 21.75 1.875V11.625C21.75 12.6605 20.9105 13.5 19.875 13.5H2.625C1.58947 13.5 0.75 12.6605 0.75 11.625V1.875ZM7.5 6.75C7.5 4.67893 9.17893 3 11.25 3C13.3211 3 15 4.67893 15 6.75C15 8.82107 13.3211 10.5 11.25 10.5C9.17893 10.5 7.5 8.82107 7.5 6.75ZM18 6C17.5858 6 17.25 6.33579 17.25 6.75V6.7575C17.25 7.17171 17.5858 7.5075 18 7.5075H18.0075C18.4217 7.5075 18.7575 7.17171 18.7575 6.7575V6.75C18.7575 6.33579 18.4217 6 18.0075 6H18ZM3.75 6.75C3.75 6.33579 4.08579 6 4.5 6H4.5075C4.92171 6 5.2575 6.33579 5.2575 6.75V6.7575C5.2575 7.17171 4.92171 7.5075 4.5075 7.5075H4.5C4.08579 7.5075 3.75 7.17171 3.75 6.7575V6.75Z" fill="#A685FA"/>
+              <path d="M1.5 15C1.08579 15 0.75 15.3358 0.75 15.75C0.75 16.1642 1.08579 16.5 1.5 16.5C6.90005 16.5 12.1302 17.2222 17.0998 18.5749C18.2904 18.899 19.5 18.0168 19.5 16.7551V15.75C19.5 15.3358 19.1642 15 18.75 15H1.5Z" fill="#A685FA"/>
+              </svg>            
+          </div>
+          <p class="advantages__paragraph">Unlock Property Value</p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__icon-container">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.950195 1.30002C0.950195 0.802968 1.35314 0.400024 1.8502 0.400024H14.4502C14.9473 0.400024 15.3502 0.802968 15.3502 1.30002C15.3502 1.79708 14.9473 2.20002 14.4502 2.20002H14.1502V18.7C14.1502 19.1971 13.7473 19.6 13.2502 19.6H11.4502C10.9531 19.6 10.5502 19.1971 10.5502 18.7V15.7C10.5502 15.203 10.1473 14.8 9.6502 14.8H6.6502C6.15314 14.8 5.7502 15.203 5.7502 15.7V18.7C5.7502 19.1971 5.34725 19.6 4.8502 19.6H1.8502C1.35314 19.6 0.950195 19.1971 0.950195 18.7C0.950195 18.203 1.35314 17.8 1.8502 17.8H2.1502V2.20002H1.8502C1.35314 2.20002 0.950195 1.79708 0.950195 1.30002ZM4.5502 4.60002C4.5502 4.26865 4.81882 4.00002 5.1502 4.00002H6.3502C6.68157 4.00002 6.9502 4.26865 6.9502 4.60002V5.80002C6.9502 6.1314 6.68157 6.40002 6.3502 6.40002H5.1502C4.81882 6.40002 4.5502 6.1314 4.5502 5.80002V4.60002ZM5.1502 8.80002C4.81882 8.80002 4.5502 9.06865 4.5502 9.40002V10.6C4.5502 10.9314 4.81882 11.2 5.1502 11.2H6.3502C6.68157 11.2 6.9502 10.9314 6.9502 10.6V9.40002C6.9502 9.06865 6.68157 8.80002 6.3502 8.80002H5.1502ZM9.3502 4.60002C9.3502 4.26865 9.61882 4.00002 9.9502 4.00002H11.1502C11.4816 4.00002 11.7502 4.26865 11.7502 4.60002V5.80002C11.7502 6.1314 11.4816 6.40002 11.1502 6.40002H9.9502C9.61882 6.40002 9.3502 6.1314 9.3502 5.80002V4.60002ZM9.9502 8.80002C9.61882 8.80002 9.3502 9.06865 9.3502 9.40002V10.6C9.3502 10.9314 9.61882 11.2 9.9502 11.2H11.1502C11.4816 11.2 11.7502 10.9314 11.7502 10.6V9.40002C11.7502 9.06865 11.4816 8.80002 11.1502 8.80002H9.9502Z" fill="#A685FA"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8502 5.20002C16.3531 5.20002 15.9502 5.60297 15.9502 6.10002V18.4C15.9502 19.0628 16.4875 19.6 17.1502 19.6H21.6502C22.1473 19.6 22.5502 19.1971 22.5502 18.7C22.5502 18.203 22.1473 17.8 21.6502 17.8H21.3502V7.00002H21.6502C22.1473 7.00002 22.5502 6.59708 22.5502 6.10002C22.5502 5.60297 22.1473 5.20002 21.6502 5.20002H16.8502ZM17.4502 9.40002C17.4502 9.06865 17.7188 8.80002 18.0502 8.80002H19.2502C19.5816 8.80002 19.8502 9.06865 19.8502 9.40002V10.6C19.8502 10.9314 19.5816 11.2 19.2502 11.2H18.0502C17.7188 11.2 17.4502 10.9314 17.4502 10.6V9.40002ZM18.0502 13.6C17.7188 13.6 17.4502 13.8687 17.4502 14.2V15.4C17.4502 15.7314 17.7188 16 18.0502 16H19.2502C19.5816 16 19.8502 15.7314 19.8502 15.4V14.2C19.8502 13.8687 19.5816 13.6 19.2502 13.6H18.0502Z" fill="#A685FA"/>
+              </svg>              
+          </div>
+          <p class="advantages__paragraph">Effortless Property Management</p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__icon-container">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.25 2.25C12.6642 2.25 13 2.58579 13 3V5.25C13 5.66421 12.6642 6 12.25 6C11.8358 6 11.5 5.66421 11.5 5.25V3C11.5 2.58579 11.8358 2.25 12.25 2.25Z" fill="#A685FA"/>
+              <path d="M7.75 12C7.75 9.51472 9.76472 7.5 12.25 7.5C14.7353 7.5 16.75 9.51472 16.75 12C16.75 14.4853 14.7353 16.5 12.25 16.5C9.76472 16.5 7.75 14.4853 7.75 12Z" fill="#A685FA"/>
+              <path d="M19.1443 6.16634C19.4372 5.87344 19.4372 5.39857 19.1443 5.10568C18.8514 4.81278 18.3766 4.81278 18.0837 5.10568L16.4927 6.69667C16.1998 6.98956 16.1998 7.46444 16.4927 7.75733C16.7856 8.05022 17.2605 8.05022 17.5534 7.75733L19.1443 6.16634Z" fill="#A685FA"/>
+              <path d="M22 12C22 12.4142 21.6642 12.75 21.25 12.75H19C18.5858 12.75 18.25 12.4142 18.25 12C18.25 11.5858 18.5858 11.25 19 11.25H21.25C21.6642 11.25 22 11.5858 22 12Z" fill="#A685FA"/>
+              <path d="M18.0836 18.8943C18.3765 19.1871 18.8513 19.1871 19.1442 18.8943C19.4371 18.6014 19.4371 18.1265 19.1442 17.8336L17.5532 16.2426C17.2603 15.9497 16.7855 15.9497 16.4926 16.2426C16.1997 16.5355 16.1997 17.0104 16.4926 17.3033L18.0836 18.8943Z" fill="#A685FA"/>
+              <path d="M12.25 18C12.6642 18 13 18.3358 13 18.75V21C13 21.4142 12.6642 21.75 12.25 21.75C11.8358 21.75 11.5 21.4142 11.5 21V18.75C11.5 18.3358 11.8358 18 12.25 18Z" fill="#A685FA"/>
+              <path d="M8.0075 17.3033C8.3004 17.0104 8.3004 16.5355 8.0075 16.2426C7.71461 15.9497 7.23974 15.9497 6.94684 16.2426L5.35585 17.8336C5.06296 18.1265 5.06296 18.6014 5.35585 18.8943C5.64875 19.1872 6.12362 19.1872 6.41651 18.8943L8.0075 17.3033Z" fill="#A685FA"/>
+              <path d="M6.25 12C6.25 12.4142 5.91421 12.75 5.5 12.75H3.25C2.83579 12.75 2.5 12.4142 2.5 12C2.5 11.5858 2.83579 11.25 3.25 11.25H5.5C5.91421 11.25 6.25 11.5858 6.25 12Z" fill="#A685FA"/>
+              <path d="M6.94673 7.75732C7.23962 8.05021 7.7145 8.05021 8.00739 7.75732C8.30028 7.46443 8.30028 6.98955 8.00739 6.69666L6.4164 5.10567C6.12351 4.81278 5.64863 4.81278 5.35574 5.10567C5.06285 5.39856 5.06285 5.87344 5.35574 6.16633L6.94673 7.75732Z" fill="#A685FA"/>
+              </svg>              
+          </div>
+          <p class="advantages__paragraph">Smart Investments, Informed Decisions</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="properties">
+      <svg width="44" height="19" viewBox="0 0 44 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M42.7201 8.74315L42.9905 8.6691L42.7141 8.59251C41.6589 8.2999 40.9877 7.4814 40.6585 6.43704L40.5915 6.03524L40.4273 6.43704C40.1811 7.47858 39.3028 8.28948 38.2704 8.57188L38 8.64593L38.2764 8.72252C39.3316 9.01513 40.1785 9.83293 40.5077 10.8773L40.5939 11.1508L40.6585 10.878C40.9047 9.83645 41.6878 9.02555 42.7201 8.74315Z" fill="#333333"/>
+        <path d="M17.1128 9.47123L18.1019 9.21093L17.1191 8.92754C13.368 7.8461 10.4621 4.87137 9.46878 1.09599L9.10413 0.000244141L8.7559 1.09599C7.67446 4.84708 4.86892 7.74661 1.09353 8.73995L0.104376 9.00026L1.08717 9.28365C4.83826 10.3651 7.74416 13.3398 8.7375 17.1152L8.99781 18.1044L9.28119 17.1216C10.3626 13.3705 13.3374 10.4646 17.1128 9.47123Z" fill="#666666"/>
+        <path d="M33.4519 9.25762L33.9973 9.11704L33.4536 8.95731C31.3787 8.34777 29.7643 6.69517 29.2035 4.60651L28.9986 4.00007L28.8098 4.6042C28.2248 6.6727 26.685 8.26522 24.6033 8.80166L24.0579 8.94224L24.6016 9.10197C26.6765 9.71151 28.2909 11.3641 28.8517 13.4528L28.9987 14L29.152 13.458C29.737 11.3895 31.3703 9.79406 33.4519 9.25762Z" fill="#333333"/>
+        </svg>
+      <h2 class="properties__title">Featured Properties</h2>
+      <p class="properties__paragraph">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
+      <a href="#">View All Properties</a>
+      <ul class="properties__list property-blog">
+        <li class="property-blog__items">
+          <div class="property-blog__item-wrap">
+            <img src="public/images/list-blog-1.jpg" alt="" class="property-blog__image"><span class="property-blog__label"></span>
+            <h2 class="property-blog__subtitle"></h2>
+            <p class="property-blog__text"></p>
+          </div>
+        </li>
+
+        <li class="property-blog__items">
+          <div class="property-blog__item-wrap">
+            <img src="public/images/list-blog-2.jpg" alt="" class="property-blog__image"><span class="property-blog__label"></span>
+            <h2 class="property-blog__subtitle">Seaside Serenity Villa</h2>
+            <p class="property-blog__text"></p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
