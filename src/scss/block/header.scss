@@ -1,5 +1,143 @@
 @use '../global/variables.scss';
 
-.header__top-banner-text {
-    background-color: variables.$purple-70;
+.header {
+    &__top-inner-wrap {
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: variables.$desktop-width) {
+           
+        }
+    }
+
+    &__top {
+        background-color: variables.$grey-10;
+        background-image: url('public/svg/line.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .hidden {
+            display: none;
+        }
+    
+        .header__top-text-container {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            justify-content: center;
+            
+            @media (min-width: variables.$tablet-width) {
+                font-size: 14px;
+              
+            }
+    
+            @media (min-width: variables.$desktop-width) {
+                font-size: 18px;
+            }
+            
+        }
+        .header__top-banner-text {
+            margin: 0;
+            font-size: 12px;
+            line-height: 150%;
+            color: variables.$absolute-white;
+            
+            @media (min-width: variables.$tablet-width) {
+                font-size: 14px;
+            }
+        }
+    
+        .header__top-link {
+            position: relative;
+            color: variables.$absolute-white;
+            font-size: 12px;
+            text-decoration: none;
+    
+            @media (min-width: variables.$tablet-width) {
+                font-size: 14px;
+            }
+            
+    
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                position: absolute;
+                bottom: 3px;
+                background-color: variables.$absolute-white;
+                height: 1px;
+            }
+        }
+    
+        .header__top-close-button {
+            left: 23px;
+    
+            @media (min-width: variables.$tablet-width) {
+                left: 20%
+            }
+    
+            @media (min-width: variables.$desktop-width) {
+               left: 45%; 
+            }
+        }
+    
+        
+    }
+
+    &__bottom {
+        
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__bottom-burger-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            @media (min-width: variables.$tablet-width) {
+                display: none;
+            }
+        }
+
+        
+
+        .header__bottom-burger-element {
+            transition: width .3s ease-in-out;
+            width: 21px;
+            height: 1px;
+            background-color: variables.$absolute-white;
+        }
+
+        .header__bottom-burger-element:last-child {
+            width: 50%;
+            
+        }
+    }
+
+    &__list {
+      display: none;
+
+      @media (min-width: variables.$tablet-width) {
+        display: flex;
+    }
+    }
+
+    
 }
+.header__bottom-burger-menu:hover >
+.header__bottom-burger-element:last-child {
+    width: 100%;
+}
+
+.open {
+    display: block;
+}
+
+
+

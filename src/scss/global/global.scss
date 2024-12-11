@@ -5,7 +5,8 @@
 body {
     font-family: fonts.$primary-font, Arial, sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 150%;
+    font-weight: 500;
     margin: 0;
     overflow-x: hidden;
     color: variables.$grey-60;
@@ -34,3 +35,23 @@ body {
     object-fit: contain;
   }
 
+  .hidden {
+    display: none;
+  }
+
+  .container {
+    width: 390px;
+    margin: 0 auto;
+    padding: 0 16px;
+    @media (min-width: variables.$tablet-width) {
+      width: 768px;
+      padding:  0 80px;
+      
+    }
+  
+    @media (min-width: variables.$desktop-width) {
+      width: 1440px;
+      padding:  0 162px;
+    }
+
+  }
