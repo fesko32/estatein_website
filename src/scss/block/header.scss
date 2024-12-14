@@ -1,6 +1,9 @@
 @use '../global/variables.scss';
 
 .header {
+    
+    background-color: variables.$grey-10;
+
     &__top-inner-wrap {
         position: relative;
         padding-top: 40px;
@@ -8,6 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
         @media (min-width: variables.$desktop-width) {
            
         }
@@ -78,22 +82,24 @@
                 left: 20%
             }
     
-            @media (min-width: variables.$desktop-width) {
-               left: 45%; 
+            @media (min-width: variables.$laptop-width) {
+               left: 40%; 
             }
         }
-    
-        
     }
 
-    &__bottom {
-        
-        padding: 20px 0 20px 0;
+    &__bottom {   
+        padding-top: 20px;
+        padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (min-width: variables.$tablet-width) {
+
+        }
         .header__bottom-burger-menu {
             display: flex;
+            position: relative;
             flex-direction: column;
             align-items: flex-end;
             gap: 3px;
@@ -120,14 +126,78 @@
         }
     }
 
+    &__main-logo {
+        display: block;
+    }
+
+    &__nav {
+        position: relative;
+    }
+
     &__list {
-      display: none;
-
-      @media (min-width: variables.$tablet-width) {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transform: translateX(20px);
+        opacity: 0;
+        border-radius: 8px;
+        transition: all ease 0.3s;
         display: flex;
-    }
+        width: 150px;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 5;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        background-color: variables.$grey-10;
+    
+    
+        @media (min-width: variables.$tablet-width) {
+            flex-direction: row;
+            width: auto;
+            position: static;
+            opacity: 1;
+            background-color: transparent;
+            transform: translate(0, 0%);
+        }
     }
 
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        display: flex;
+        color: variables.$absolute-white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: variables.$grey-10;
+
+        @media (min-width: variables.$tablet-width) {
+            padding: 9px 11px;
+        }
+
+        @media (min-width: variables.$laptop-width) {
+            padding: 14px 24px;
+        }
+
+        &.header__link--current {
+            background-color: variables.$grey-08;
+            outline: 1px solid variables.$grey-15;
+        }
+
+       &.header__link--contact {
+        display: none;
+        @media (min-width: variables.$tablet-width) {
+            display: block;
+            background-color: variables.$grey-08;
+            outline: 1px solid variables.$grey-15;
+        }
+        
+       }
+    }
     
 }
 .header__bottom-burger-menu:hover >
@@ -136,7 +206,8 @@
 }
 
 .open {
-    display: block;
+    transform: translate(-2%, 0%);
+    opacity: 1;
 }
 
 
