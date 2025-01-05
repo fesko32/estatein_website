@@ -1,13 +1,33 @@
-/* здесь подключите шрифты*/
-@use 'mixins.scss';
+@use 'mixins.scss'; // Подключение только здесь
 
-$primary-font: Urbanist;
+@include mixins.font-face(
+  "Urbanist",
+  400,
+  normal,
+  url("/fonts/Urbanist-Regular.woff2") format("woff2")
+);
+
 
 @include mixins.font-face(
   "Urbanist",
   500,
   normal,
-  url("/fonts/Urbanist-Medium.woff2.woff2") format("woff2")
+  url("/fonts/Urbanist-Medium.woff2") format("woff2")
+);
+
+@include mixins.font-face(
+  "Urbanist",
+  600,
+  normal,
+  url("/fonts/Urbanist-SemiBold.woff2") format("woff2")
+);
+
+@include mixins.font-face(
+  "Urbanist",
+  700,
+  normal,
+  url("/fonts/Urbanist-Bold.woff2") format("woff2")
 );
 
 
+$primary-font: "Urbanist";

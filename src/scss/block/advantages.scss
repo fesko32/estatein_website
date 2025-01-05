@@ -1,0 +1,58 @@
+@use '../global/variables.scss';
+
+.advantages-list {
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    box-shadow: 0 0 0 4px #191919;
+    outline: 1px solid variables.$grey-15;
+    border-radius: 12px;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 164px;
+    list-style: none;
+    outline: 1px solid variables.$grey-15;
+    border-radius: 10px;
+    padding: 20px 14px;
+}
+
+.advantages__icon-container {
+    margin-bottom: 14px;
+    &--home-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../public/svg/home.svg");
+    }
+
+
+    &--unlock-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../public/svg/unlock.svg");
+    }
+    &--property-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../public/svg/property.svg");
+    }
+    &--smart-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../public/svg/smart.svg");
+    }
+}
+
+.advantages__paragraph {
+    margin: 0;
+    width: 136px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 150%;
+    color: variables.$absolute-white;
+}
