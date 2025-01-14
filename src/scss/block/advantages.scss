@@ -1,17 +1,22 @@
 @use '../global/variables.scss';
 
-.advantages-list {
+.advantages {
+    margin-bottom: 60px;
+}
+
+.advantages__list {
     margin: 0;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
     box-shadow: 0 0 0 4px #191919;
     outline: 1px solid variables.$grey-15;
     border-radius: 12px;
 }
 
 .advantages__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +25,20 @@
     outline: 1px solid variables.$grey-15;
     border-radius: 10px;
     padding: 20px 14px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 22px;
+        top: 23px;
+        width: 23px;
+        height: 21px;
+        mask-size: 25px 19px;
+        -webkit-mask-image:  url("../../../public/svg/arrow.svg");
+        mask-image: url("../../../public/svg/arrow.svg");
+        mask-repeat: no-repeat;
+        background-color: variables.$grey-30;
+    }
 }
 
 .advantages__icon-container {
@@ -30,17 +49,18 @@
         background-image: url("../../../public/svg/home.svg");
     }
 
-
     &--unlock-icon {
         width: 48px;
         height: 48px;
         background-image: url("../../../public/svg/unlock.svg");
     }
+
     &--property-icon {
         width: 48px;
         height: 48px;
         background-image: url("../../../public/svg/property.svg");
     }
+
     &--smart-icon {
         width: 48px;
         height: 48px;

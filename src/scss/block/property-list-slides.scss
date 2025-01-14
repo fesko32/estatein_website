@@ -1,0 +1,140 @@
+@use '../global/variables.scss';
+
+.property-list-slides {
+    display: grid;
+    gap: 20px;
+}
+
+.property-list-slides__items {
+    min-width: 357px;
+    list-style: none;
+    padding: 24px;
+    outline: 1px solid variables.$grey-15;
+    border-radius: 12px;
+}
+
+.property-list-slides__link-img {
+    display: block;
+    width: 310px;
+    height: 210px;
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+.property-list-slides__images {
+    display: block;
+    border-radius: 10px;
+}
+
+.property-list-slides__subtitle {
+    margin: 0;
+    color: variables.$absolute-white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 1px;
+}
+
+.property-list-slides__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 19px;
+}
+
+.property-list-slides__text-link {
+    color: variables.$absolute-white;
+}
+
+.property-list-slides__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+    margin-bottom: 21px;
+}
+
+.property-list-slides__item {
+    display: flex; 
+    align-items: center; 
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 5px 13px;
+    border-radius: 28px;
+    border: 1px solid variables.$grey-15;
+    background-color: variables.$grey-10;
+
+    
+}
+
+.property-list-slides__item--bed-icon {
+    &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        position: relative;
+        left: 0;
+        height: 20px;
+        background-image: url("/public/svg/badroom.svg");
+        background-repeat: no-repeat;
+    }   
+}
+
+.property-list-slides__item--shower-icon {
+    &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        position: relative;
+        left: 0;
+        height: 20px;
+        background-image: url("/public/svg/bathroom.svg");
+        background-repeat: no-repeat;
+    }   
+}
+
+.property-list-slides__item--high-rise-icon {
+    &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        position: relative;
+        left: 0;
+        height: 20px;
+        background-image: url("/public/svg/villa.svg");
+        background-repeat: no-repeat;
+    }   
+}
+
+.property-list-slides__text-element {
+    display: block;
+}
+
+.property-list-slides__bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-list-slides__price-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 1px;
+}
+
+.property-list-slides__price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.property-list-slides__link {
+    padding: 14px 35px;
+    text-decoration: none;
+    color: variables.$absolute-white;
+    background-color: variables.$purple-60;
+    border-radius: 8px;
+}
