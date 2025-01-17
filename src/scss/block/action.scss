@@ -1,0 +1,36 @@
+@use '../global/variables.scss';
+
+
+.action {
+    background-image: url("/public/svg/action-bg.svg");
+    background-repeat: no-repeat;
+}
+
+.action__inner-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.action__title {
+    margin: 0 0 6px 0;
+    color: variables.$absolute-white;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+}
+.action__paragraph {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0 0 30px 0;
+}
+.action__link {
+    display: flex;
+    width: 100%;
+    padding: 14px 0 14px 0;
+    border-radius: 8px;
+    justify-content: center;
+    text-decoration: none;
+    color: variables.$absolute-white;
+    background-color: variables.$purple-60;
+}

@@ -1,0 +1,60 @@
+@use '../global/variables.scss';
+
+.asked__inner-wrap {
+    background-image: url("/public/svg/star.svg");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    background-position: 16px 0;
+    margin-bottom: 80px;
+}
+.visually-hidden {
+}
+.asked__title {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+}
+.asked__paragraph {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+.asked__list {
+    display: grid;
+    gap: 20px;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+.asked__item {
+    padding: 30px;
+    outline: 1px solid variables.$grey-15;
+    border-radius: 10px;
+    list-style: none;
+}
+.asked__question-title {
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 18px;
+    color: variables.$absolute-white;
+
+}
+.asked__question-paragraph {
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+}
+
+.asked__button {
+    font-weight: 500;
+    line-height: 131%;
+    letter-spacing: -0.01em;
+    width: 100%;
+    color: variables.$absolute-white;
+    background-color: variables.$grey-10;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0 14px 0;
+}
