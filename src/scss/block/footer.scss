@@ -1,7 +1,5 @@
 @use '../global/variables.scss';
 
-.footer {
-}
 .footer__main-logo {
     display: block;
     width: 113px;
@@ -40,12 +38,12 @@
         height: 24px;
         background-image: url("/public/svg/telegram.svg");
     }
-
-
 }
 
 .footer__input-mail {
     width: 100%;
+    height: 52px;
+    line-height: 171%;
     padding: 14px 47px;   
     background-color: transparent;
     color: variables.$absolute-white;
@@ -54,17 +52,28 @@
     outline: 1px solid variables.$grey-15;
 
 
-
 }
-.footer__list {
+
+.footer__wrap-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+}
+
+
+.footer__left-col {
+    display: grid;
+    gap: 40px;
     margin: 0;
     padding: 0;
-    display: grid;
-    gap: 40px 20px; /* Расстояние между колонками и строками */
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto; 
-   
 }
+
+.footer__right-col {
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+
 .footer__list-element {
     display: inline-block;
     list-style: none;
@@ -72,9 +81,12 @@
 }
 .footer__title {
     margin: 0 0 16px 0;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
 }
 .footer__menu {
-    padding: 0;
+    padding: 4px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -85,6 +97,11 @@
     
 }
 .footer-maim__menu-link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
     text-decoration: none;
     color: variables.$absolute-white;
 }
@@ -92,12 +109,45 @@
 
   
 .footer__bottom {
+    background-color: variables.$grey-10;
+    padding: 20px 0;
 }
-.footer__copyright-wrap {
-}
-.footer__copyright {
-}
+
 .footer__list-links {
+    margin: 0 0 21px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 .footer__item {
+    list-style: none;
+   
+}
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$grey-08;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+.footer__social-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__copyright-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__copyright {
+    margin: 0 0 14px 0;
+}
+
+.footer__copyright-link {
+    text-decoration: none;
+    color: variables.$grey-60;
 }
