@@ -1,4 +1,6 @@
 @use '../global/variables.scss';
+@use '../global/mixins.scss';
+
 
 .clients__inner-wrap {
     background-image: url("/public/svg/star.svg");
@@ -13,6 +15,7 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
+    color: variables.$absolute-white;
 }
 
 .clients__paragraph {
@@ -68,10 +71,7 @@
 
 .clients__review-title {
     margin: 0;
-    color: variables.$absolute-white;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
+    @include mixins.smal-title(18px);
     margin-bottom: 6px;
 }
 

@@ -8,6 +8,7 @@
 
 
 /* BLOCK */ 
+/*------index.html--------*/
 @use 'block/header.scss';
 @use 'block/button-close.scss';
 @use 'block/hero.scss';
@@ -19,3 +20,8 @@
 @use 'block/asked.scss';
 @use 'block/action.scss';
 @use 'block/footer.scss';
+/*------index.html--------*/
+
+/*-----property.html------*/
+@use 'block/find-property.scss';
+/*-----property.html------*/

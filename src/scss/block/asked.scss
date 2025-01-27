@@ -1,4 +1,5 @@
 @use '../global/variables.scss';
+@use '../global/mixins.scss';
 
 .asked__inner-wrap {
     background-image: url("/public/svg/star.svg");
@@ -11,9 +12,7 @@
 
 .asked__title {
     margin: 0 0 6px 0;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 150%;
+    @include mixins.smal-title(28px);
 }
 .asked__paragraph {
     margin: 0;
@@ -36,10 +35,7 @@
 }
 .asked__question-title {
     margin: 0 0 20px 0;
-    font-weight: 600;
-    line-height: 150%;
-    font-size: 18px;
-    color: variables.$absolute-white;
+    @include mixins.smal-title(18px);
 
 }
 .asked__question-paragraph {

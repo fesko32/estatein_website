@@ -10,4 +10,13 @@ export default defineConfig({
       ],
     }),
   ],
+  build: { // Нужно обернуть rollupOptions в build
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        about: './property.html',
+      },
+    },
+  },
 });
+
