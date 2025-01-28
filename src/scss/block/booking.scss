@@ -1,0 +1,28 @@
+@use '../global/variables.scss';
+@use '../global/mixins.scss';
+
+.booking {
+}
+.booking__inner-wrap {
+    background-image: url("/public/svg/star.svg");
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    background-position: 16px 0;
+    margin-bottom: 60px;
+}
+.container {
+}
+.booking__title {
+    margin: 0 0 8px 0;
+    @include mixins.smal-title(28px);
+    color: variables.$absolute-white;
+}
+.booking__paragraph {
+    margin: 0 0 40px 0;
+}
+.booking__list {
+}
+.booking__item {
+}
+.button {
+}

@@ -5,18 +5,44 @@
     gap: 20px;
 }
 
+
+
 .property-list-slides__items {
     min-width: 357px;
     list-style: none;
     padding: 24px;
-    outline: 1px solid variables.$grey-15;
+    border: 1px solid variables.$grey-15;
     border-radius: 12px;
+
+    &--pg {
+        padding: 20px;
+    }
 }
 
 .property-list-slides__link-img {
     display: block;
     border-radius: 10px;
     margin-bottom: 17px;
+
+    &--mg {
+        margin-bottom: 24px;
+    }
+}
+
+.properties__deskription-element {
+    display: block;
+    padding: 5px 11px;
+    background-color: variables.$grey-10;
+    border: 1px solid variables.$grey-15;
+    color: variables.$absolute-white;
+    width: 270px;
+    border-radius: 28px;
+    margin: 0 0 17px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
 }
 
 .property-list-slides__images {
@@ -25,20 +51,27 @@
 }
 
 .property-list-slides__subtitle {
-    margin: 0;
+    margin: 0 0 1px 0;
     color: variables.$absolute-white;
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 1px;
+
+    &--mg {
+        margin: 0 0 3px 0;
+    }
 }
 
 .property-list-slides__text {
-    margin: 0;
+    margin: 0 0 19px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    margin-bottom: 19px;
+
+    &--mg {
+        margin: 0 0 24px 0;
+    }
 }
 
 .property-list-slides__text-link {
@@ -135,4 +168,8 @@
     color: variables.$absolute-white;
     background-color: variables.$purple-60;
     border-radius: 8px;
+
+    &--pg {
+        padding: 14px 33px;
+    }
 }

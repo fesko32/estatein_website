@@ -6,12 +6,23 @@
     align-items: flex-start;
     padding-top: 15px;
     border-top: 1px solid variables.$grey-15;
+
+    &--br-pg {
+        border: none;
+        padding: 0;
+    }
 }
 
 .swiper-pagination-blog__container-elements {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    &--space-btn {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
 }
 
 .swiper-pagination-blog__link {
