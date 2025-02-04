@@ -6,7 +6,6 @@
     margin-bottom: 61px;
 }
 
-
 .find-property__description {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -40,10 +39,6 @@
     }
 }
 
-.find-property {
-   
-}
-
 .find-property__title {
     @include mixins.smal-title(28px);
     margin: 0 0 10px 0;
@@ -53,13 +48,6 @@
     margin: 0;
 }
 
-.find-property__search {
-   
-}
-
-.find-property__search-label {
-
-}
 .find-property__search-header {
     display: flex;
     position: relative;
@@ -73,6 +61,7 @@
 .find-property__search-label {
     width: 80%;
 }
+
 .find-property__search-input {
     width: 100%;
     font-weight: 500;

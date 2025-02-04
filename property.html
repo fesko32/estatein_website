@@ -70,7 +70,7 @@
                       <li class="find-property__search-select-item find-property__search-select-item--location-svg">
                         <select class="find-property__search-select" name="location">
                           <option disabled selected value="Property location">Location</option>
-                          <option selected>Location</option>
+                          <option value="Location">Location</option>
                         </select>
                       </li>
 
@@ -199,85 +199,115 @@
                 <h2 class="booking__title">Let's Make it Happen</h2>
                 <p class="booking__paragraph">Ready to&nbsp;take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to&nbsp;find your perfect match. Don&rsquo;t wait; let&rsquo;s embark on&nbsp;this exciting journey together.</p>
 
-                <form action="#">
-                    
-                    <div class="booking__list">
-                        <li class="booking__item">
-                            <label>
-                                <input name="user-name" type="text">
+                <form action="#" method="get">
+                  <div class="booking__form-inner-wrap">
+                    <ul class="booking__list">
+                          <li class="booking__item">
+                              <label class="booking__label">
+                                First Name
+                                <input class="booking__input" type="text" name="user-name" placeholder="Enter First Name">
+                              </label>
+                          </li>
+                          <li class="booking__item">
+                              <label class="booking__label">Last Name
+                                  <input class="booking__input" name="user-last-name" type="text" placeholder="Enter Last Name">
+                              </label>
+                          </li>
+                          <li class="booking__item">
+                              <label class="booking__label">Email
+                                  <input class="booking__input" name="user-email" type="email" placeholder="Enter your Email">
+                              </label>
+                          </li>
+                          <li class="booking__item">
+                            <label class="booking__label">Phone
+                                <input class="booking__input" name="user-phone-number" type="tel" placeholder="Enter Phone Number" required>
                             </label>
-                        </li>
-                        <li class="booking__item">
-                            <label>
-                                <input name="user-last-name" type="text">
-                            </label>
-                        </li>
-                        <li class="booking__item">
-                            <label>
-                                <input name="user-email" type="text">
-                            </label>
-                        </li>
-                        <li class="booking__item">
-                            <label>Preferred Location
-                                <select name="ddd" id="s">
-                                    <option value="s">dds</option>
+                          </li>
+                          <li class="booking__item">
+                            <div class="booking__select-wrap">
+                              <label class="booking__label">Preferred Location
+                                  <select class="booking__input" name="Preferred-Location">
+                                    <option value="Preferred-Location" selected disabled>Preferred Location</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FA">France</option>
+                                    <option value="DE">Germaby</option>
                                 </select>
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>Property Type
-                                <select name="ddd" id="s">
-                                    <option value="s">dds</option>
+                              </label> 
+                            </div>
+                               
+                          </li>
+                          <li class="booking__item">
+                            <div class="booking__select-wrap">
+                              <label class="booking__label">Property Type
+                                  <select class="booking__input" name="Property-Type">
+                                      <option value="Villa" selected disabled>Select Property Type</option>
+                                      <option value="Villa">Villa</option>
+                                  </select>
+                                </label> 
+                              </div>
+                          </li>
+                          <li class="booking__item">
+                              <div class="booking__select-wrap">
+                                  <label class="booking__label">No. of Bathrooms
+                                  <select class="booking__input" name="No. of Bathrooms">
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                  </select>
+                                </label> 
+                              </div>
+                          </li>
+                          <li class="booking__item">
+                            <div class="booking__select-wrap">
+                              <label class="booking__label">No. of Bedrooms
+                                  <select class="booking__input" name="No. of Bedrooms">
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
+                                </label> 
+                            </div>
+                          </li>
+                          <li class="booking__item">
+                            <div class="booking__select-wrap">
+                              <label class="booking__label">Budget
+                                <select class="booking__input" name="Budget">
+                                  <option value="0-500.000">0-500.000</option>
+                                  <option value="500.000-1.000.000">500.000-1.000.000</option>
+                                  <option value="1.000.000-1.500.000">1.000.000-1.500.000</option>
                                 </select>
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>No. of Bathrooms
-                                <select name="ddd" id="s">
-                                    <option value="s">dds</option>
-                                </select>
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>No. of Bedrooms
-                                <select name="ddd" id="s">
-                                    <option value="s">dds</option>
-                                </select>
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>Budget
-                                <select name="ddd" id="s">
-                                    <option value="s">dds</option>
-                                </select>
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>Preferred Contact Method
-                                <input type="text">
-                            </label> 
-                        </li>
-                        <li class="booking__item">
-                            <label>
-                                <input type="text">
-                            </label> 
-                        </li>
-
-                        <li class="booking__item">
-                            <label>Message
-                                <textarea name="story" rows="5" cols="33">
-                                   
-                                    </textarea>
-                            </label> 
-                        </li>
-
-                        <li class="booking__item">
-                            <label>
-                                <input type="checkbox">I agree with Terms of Use and Privacy Policy
-                            </label> 
-                        </li>
-                    </div>
-                    <button class="button"  type="submit">Send Your Message</button>
+                              </label> 
+                            </div>
+                          </li>
+                          <li class="booking__item">
+                            <div class="booking__wrap-contact-method">
+                              <label class="booking__label">Preferred Contact Method
+                                <input class="booking__input" type="tel" placeholder="Enter Your Number">
+                              </label>
+                              <label class="booking__label">
+                                <input class="booking__input" type="email" placeholder="Enter Your Email">
+                              </label> 
+                            </div>
+                           
+                          </li>
+                          <li class="booking__item">
+                              <label class="booking__label">Message
+                                  <textarea class="booking__input booking__input--textarea" name="message-user" placeholder="Enter your Message here.."></textarea>
+                                </label> 
+                          </li>
+                        </ul>
+                        <div class="booking__bottom-wrap">
+                          <label class="booking__checkbox-label">
+  
+                            <input class="booking__checkbox-input visually-hidden" name="approval-user" value="approval" type="checkbox">
+                            <span class="booking__checkbox">I&nbsp;agree with&nbsp;<a class="booking__link" href="#">Terms of&nbsp;Use</a>&nbsp;and&nbsp;<a class="booking__link" href="#">Privacy Policy</a></span>
+                          
+                          </label> 
+                          <button class="button booking__button" type="submit">Send Your Message</button>
+                          
+                        </div>
+                  </div>
                 </form>
             </div>
         </section>
