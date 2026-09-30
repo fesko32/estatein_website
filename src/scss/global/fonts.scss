@@ -1,4 +1,5 @@
-@use 'mixins.scss'; // Подключение только здесь
+@use "sass:map";
+@use "mixins";
 
 @include mixins.font-face(
   "Urbanist",
@@ -6,7 +7,6 @@
   normal,
   url("/fonts/Urbanist-Regular.woff2") format("woff2")
 );
-
 
 @include mixins.font-face(
   "Urbanist",
@@ -28,6 +28,5 @@
   normal,
   url("/fonts/Urbanist-Bold.woff2") format("woff2")
 );
-
 
 $primary-font: "Urbanist";

@@ -1,29 +1,11 @@
-/* GLOBAL */ 
-@use 'normalize.css'; 
-@use 'global/variables.scss';
-@use 'global/fonts.scss';
-@use 'global/mixins.scss';
-@use 'global/global.scss';
-@use 'global/visually-hidden.scss';
+/* GLOBAL */
+@use "normalize.css";
+@use "global/variables.scss";
+@use "global/fonts.scss";
+@use "global/mixins.scss";
+@use "global/global.scss";
+@use "global/visually-hidden.scss";
 
+/* BLOCK */
 
-/* BLOCK */ 
-/*------index.html--------*/
-@use 'block/header.scss';
-@use 'block/button.scss';
-@use 'block/button-close.scss';
-@use 'block/hero.scss';
-@use 'block/advantages.scss';
-@use 'block/properties.scss';
-@use 'block/swiper-pagination-blog.scss';
-@use 'block/property-list-slides.scss';
-@use 'block/clients.scss';
-@use 'block/asked.scss';
-@use 'block/action.scss';
-@use 'block/footer.scss';
-/*------index.html--------*/
-
-/*-----property.html------*/
-@use 'block/find-property.scss';
-@use 'block/booking.scss';
-/*-----property.html------*/
+@use "block/button.scss";

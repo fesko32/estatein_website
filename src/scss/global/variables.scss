@@ -1,27 +1,55 @@
-$absolute-white: #fff;
-$absolute-black: #000;
-$purple-60: #703bf7;
-$purple-65: #8254f8;
-$purple-70: #946cf9;
-$purple-75: #a685fa;
-$purple-90: #dbcefd;
-$purple-95: #ede7fe;
-$purple-97: #f4f0fe;
-$purple-99: #fbfaff;
-$white-90: #e4e4e7;
-$white-95: #f1f1f3;
-$white-97: #f7f7f8;
-$white-99: #fcfcfd;
-$grey-08: #141414;
-$grey-10: #1a1a1a;
-$grey-15: #262626;
-$grey-20: #333;
-$grey-30: #4d4d4d;
-$grey-40: #666;
-$grey-50: #808080;
-$grey-60: #999;
+@use "sass:map";
 
-$mobile-width: 320px;
-$tablet-width: 768px;
-$laptop-width: 1440px;
-$desktop-width: 1920px;
+$colors: (
+  "absolute": (
+    "white": #ffffff,
+    "black": #000000,
+  ),
+
+  "purple": (
+    60: #703bf7,
+    65: #8254f8,
+    70: #946cf9,
+    75: #a685fa,
+    90: #dbcefd,
+    95: #ede7fe,
+    97: #f4f0fe,
+    99: #fbfaff,
+  ),
+
+  "grey": (
+    8: #141414,
+    10: #1a1a1a,
+    15: #262626,
+    20: #333,
+    30: #4d4d4d,
+    40: #666,
+    50: #808080,
+    60: #999,
+  ),
+
+  "white": (
+    90: #e4e4e7,
+    95: #f1f1f3,
+    97: #f7f7f8,
+    99: #fcfcfd,
+  ),
+);
+
+$breakpoints: (
+  mobile: 320px,
+  tablet: 768px,
+  laptop: 1440px,
+  desktop: 1920px,
+);
+
+:root {
+  @each $group, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{$group}-#{$shade}: #{$value};
+    }
+  }
+
+  --container-width: 1920px;
+  --container-padding: clamp(16px, 10vw, 145px);
+}

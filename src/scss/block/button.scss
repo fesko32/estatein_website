@@ -1,9 +1,28 @@
+@use "../global/mixins";
+@use "../global/variables";
+
 .button {
-    text-decoration: none;
-    color: #fff;
-    background-color: #703bf7;
-    border-radius: 8px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--absolute-white);
+  padding: 20px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  font: inherit;
+  cursor: pointer;
+
+  @include mixins.media(laptop) {
+    padding: 14px 20px;
+  }
+
+  &--primary {
+    background-color: var(--purple-60);
+  }
+
+  &--secondary {
+    background-color: var(--absolute-black);
+    border: 1px solid solid var(--grey-8);
+  }
 }

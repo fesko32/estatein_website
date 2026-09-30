@@ -1,6 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
-@use 'fonts.scss';
-@use 'variables.scss';
+@use "fonts.scss";
+@use "variables.scss";
 
 body {
   font-family: fonts.$primary-font, Arial, sans-serif;
@@ -9,52 +9,35 @@ body {
   font-weight: 500;
   margin: 0;
   overflow-x: hidden;
-  color: variables.$grey-60;
 }
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  .page {
-    height: 100%;
-  }
-  
-  .page__body {
-    display: grid;
-    min-height: 100%;
-    background-color: variables.$grey-08;
-    grid-template-rows: min-content 1fr min-content;
-  }
-  
-  img {
-    min-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  .hidden {
-    display: none;
-  }
+.page {
+  height: 100%;
+}
 
-  .container {
-    width: 390px;
-    margin: 0 auto;
-    padding: 0 16px;
-    @media (min-width: variables.$tablet-width) {
-      width: 768px;
-      padding: 0 60px;
-      
-    }
-  
-    @media (min-width: variables.$laptop-width) {
-      width: 1440px;
-      padding: 0 80px;
-    }
+// .page__body {
+//   display: grid;
+//   min-height: 100%;
+//   grid-template-rows: min-content 1fr min-content;
+// }
 
-    @media (min-width: variables.$desktop-width) {
-      width: 1920px;
-      padding: 0 162px;
-    }
-  }
+img {
+  min-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: min(calc(100% - var(--container-padding) * 2), var(--container-width));
+
+  margin-inline: auto;
+}
